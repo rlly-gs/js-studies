@@ -94,3 +94,30 @@ if (salario <= 1500.00) {
 }
 
 */
+
+let carrinho = 0
+let valorTotal = 0
+const item = 90.0
+let valorFinal = 0
+
+let qtdItem = Number(prompt("Quantos 'item' você vai querer?"))
+let cartao = prompt("Vai pagar com cartão da loja?")
+carrinho += qtdItem
+valorTotal = item * qtdItem
+let desconto = 0.00
+
+if (qtdItem > 5) {
+    desconto += 0.05
+}
+if (valorTotal > 500.00) {
+    desconto += 0.10
+}
+if (cartao === "sim"){
+    desconto += 0.02
+}
+
+const totalDesconto = valorTotal * desconto;
+const DescontoRounded = totalDesconto.toFixed(2);
+valorFinal = valorTotal - totalDesconto
+console.log("Valor total = " + valorTotal + "R$" + ". Desconto de " + DescontoRounded + "R$" +", VALOR A PAGAR: " + valorFinal + "R$");
+
