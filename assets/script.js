@@ -48,3 +48,49 @@ if (media >= 7.0) {
     console.log("Reprovado, média: " + media)
 }
 */
+
+/*
+let ladoA = Number(prompt("Digite o primeiro lado: "))
+let ladoB = Number(prompt("Digite o segundo lado: "))
+let ladoC = Number(prompt("Digite o terceiro lado: "))
+
+if (ladoA === ladoB && ladoB === ladoC) {
+    console.log("Equilátero")
+} else if (ladoA === ladoC || ladoB === ladoA || ladoC === ladoB){
+    console.log("Isósceles")
+} else {
+    console.log("Escaleno")
+}
+*/
+
+
+/*
+let peso = Number(prompt("Digite seu peso: "))
+let altura = Number(prompt("Digite sua altura: "))
+let imc = peso / (altura * 2.0)
+
+if (imc < 18.5) {
+    console.log("Abaixo do peso")
+} else if (imc >= 18.5 && imc <= 24.9) {
+    console.log("Peso ideal")
+} else {
+    console.log("Sobrepeso " + imc )
+}
+*/
+
+/*
+let salario = Number(prompt("Digite seu salário: "))
+
+
+if (salario <= 1500.00) {
+    salario = salario + (salario * 0.20)
+    console.log ("Novo Salário: R$" + salario)
+} else if (salario >= 1500.01 && salario <= 3000.00) {
+    salario = salario + (salario * 0.15)
+    console.log("Novo Salário: R$" + salario)  
+} else {
+    salario = salario + (salario * 0.10)
+    console.log("Novo Salário: R$" + salario)
+}
+
+*/
