@@ -1,12 +1,16 @@
-function verificarEntrada (idade) {
-    if (idade >= 18) {
-        return "Liberado"
+function tentarLogin(usuario, senha) {
+    if(usuario === "admin" && senha === 12345) {
+        return true
     }
-    
-    return "Menor de idade"
+    return false
 }
 
-const idade = Number(prompt("Idade = "))
-const permissao = verificarEntrada(idade)
+let login = prompt("Digite o usuário: ")
+let senha = Number(prompt("Digite a senha: "))
+let sucesso = tentarLogin (login, senha)
 
-console.log(permissao)
+if (sucesso) {
+    console.log("Acesso liberado")
+} else {
+    console.log("Acesso restrito")
+}
